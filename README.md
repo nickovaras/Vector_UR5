@@ -1,4 +1,4 @@
-# Vector_UR5
+# Vector + UR5 Python Node Example
 
 An example of programatic control of ROS+MoveIt with a Python node. This node is an addition to the simulation of a Vector Mobile Robot + UR5 robot arm described here:
 
