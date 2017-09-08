@@ -7,7 +7,7 @@ https://github.com/nickovaras/vector
 
 # Setup Instructions:
 
-First, it is essential tht you overlay the workspaces, so if you built the repository of the link above, start a new terminal and do:
+First, it is essential that you overlay the workspaces, so if you built the repository of the link above, start a new terminal and do:
 
 ```
 cd ~/vector_ws
