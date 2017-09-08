@@ -27,9 +27,9 @@ cd..
 catkin_make
 source devel/setup.bash
 ```
-It is essential that you make the Python script executable (on its own directory), with 
+It is essential that you make the Python script executable. Go to the directory where the file is located and do: 
 ```
-sudo chmod +x mobile_manipulation.py
+chmod +x mobile_manipulation.py
 ```
 
 To use, after bringing all other components described in https://github.com/nickovaras/vector , start node with
