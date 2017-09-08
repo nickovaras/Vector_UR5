@@ -73,10 +73,10 @@ if __name__ == "__main__":
         rospy.loginfo("Moving to location1...")
         move_base.goto(2.250, 3.118, 0.0)
 
-        # Move arm to extended_up configuration
+        # Move arm to "extended_up" configuration
         group.clear_pose_targets()
         group_variable_values=group.get_current_joint_values()
-		group_variable_values={0,-1.5531,0,-1.6237,3.1063,0}
+	group_variable_values={0,-1.5531,0,-1.6237,3.1063,0}
         group.set_joint_value_target(group_variable_values)
         extended_up = group.plan()
         group.execute(extended_up)
@@ -85,10 +85,10 @@ if __name__ == "__main__":
         rospy.loginfo("Moving to location2...")
         move_base.goto(-3.53, 3.75, 1.57)
 
-		# Move arm to cobra configuration
+	# Move arm to "cobra" configuration
         group.clear_pose_targets()
-		group_variable_values=group.get_current_joint_values()
-		group_variable_values={1.4825,-2.1179,1.7649,-2.1885,-1.48,-1.6237}
+	group_variable_values=group.get_current_joint_values()
+	group_variable_values={1.4825,-2.1179,1.7649,-2.1885,-1.48,-1.6237}
         group.set_joint_value_target(group_variable_values)
         cobra = group.plan()
         group.execute(cobra)
