@@ -4,6 +4,9 @@ An example of programatic control of ROS+MoveIt with a Python node. This node is
 
 https://github.com/nickovaras/vector
 
+## A note on SRDF
+Unlike the c++ MoveGroup class, the Python MoveGroupCommander class seems to lack a method to directly read "group states"saved on the robot's SRDF. Consider a ROS package like srdfdom (http://wiki.ros.org/srdfdom) to parse the robots SRDF
+
 
 # Setup Instructions:
 
